@@ -8,5 +8,15 @@ import { Component } from '@angular/core';
   styleUrl: './componente03.component.css'
 })
 export class Componente03Component {
-
+  // Variável de imagem
+  imagem:string = '/assets/dia.jpg';
+  
+  //Função para alterar a imagem
+  alterarImagem() {
+    if (this.imagem === '/assets/dia.jpg') {
+      this.imagem = '/assets/noite.jpg';
+    } else {
+      this.imagem = '/assets/dia.jpg';
+    }
+  }
 }
